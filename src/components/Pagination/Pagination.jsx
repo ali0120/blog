@@ -12,7 +12,7 @@ const Pagination = ({ postsPerPage, totalPosts, currentPage, paginate }) => {
     }
 
     return (
-        <nav className="container flex justify-center mt-4 flex-wrap">
+        <div className="container flex justify-center mt-4 flex-wrap">
             <ul className="flex gap-2">
                 {pageNumbers.map(number => (
                     <li key={number} className={`px-3 py-1 rounded-full cursor-pointer ${currentPage === number
@@ -25,7 +25,7 @@ const Pagination = ({ postsPerPage, totalPosts, currentPage, paginate }) => {
                     </li>
                 ))}
             </ul>
-        </nav>
+        </div>
     );
 };
 
