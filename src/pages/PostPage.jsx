@@ -4,7 +4,7 @@ import EditForm from '../components/Form/EditForm.jsx/Editform'
 
 const PostPage = () => {
     return (
-        <section className='py-[30px] gap-[20px] md:flex-row md:gap-0 flex-col flex justify-between'>
+        <section className='py-[30px] gap-[20px] flex-col md:flex-row md:gap-0 flex justify-between'>
             <Posts />
             <EditForm />
         </section>

@@ -80,7 +80,7 @@ const Posts = () => {
                 const isExpanded = expandedPosts.includes(item.id);
 
                 return (
-                    <div key={item.id} className="mb-4 p-4 border border-gray-300 rounded-md flex justify-between">
+                    <div key={item.id} className="mb-4 p-4 border border-gray-300 rounded-md flex-col lg:flex-row flex justify-between">
                         <div>
                             <h3 className="text-lg font-bold mb-2">{item.title}</h3>
                             <p className="mb-2">{isExpanded ? item.body : truncatedBody}</p>
